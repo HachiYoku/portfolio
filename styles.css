@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+}
+.nav-bar {
+    margin: 20px;
+    height: 60px; 
+    border: 1px solid  #98eed1bf;
+    border-radius: 50px;
+    background-color: #fff;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0 20px; 
+}
+
+.logo-box {
+    display: flex;
+    align-items: center; /* Aligns logo and brand name vertically */
+}
+
+.logo {
+    width: 40px; /* Adjusted size for better fit */
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "PT Sans", sans-serif;
+}
+
+.nav-bar .book-btn {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#welcome-sec{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.wc-content{
+    /* background-color: red; */
+    width: 40%;
+    height: 400px;
+    padding: 50px 0 0 20px;
+    margin: 0 100px;
+}
+
+.active-state {
+    background-color: #98eed1bf; 
+    border: 1px solid #98eed1; 
+    border-radius: 20px; 
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.active-text{
+    color: #00a6b6; 
+    text-transform: uppercase; 
+    font-family: "PT Sans", sans-serif; 
+    font-weight: 400; 
+    font-size: 0.7em;
+    padding: 0 15px;
+}
+.available-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #00a6b6;
+    display: inline-block;
+}
+
+.wc-content h1{
+    font-family: "Gilda Display", serif;
+    font-weight: 400;
+    font-size: 6rem;
+    margin-bottom: 20px;
+}
+.copy-right-icon{
+    margin-left: -20px;
+    font-size: 2rem;
+}
+.wc-content .greeting-text{
+    font-family: "PT Sans", sans-serif; 
+    font-weight: 400; 
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.contact-btn{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#welcome-sec .img-sec{
+    background-color: rgb(81, 157, 183);
+    border: 1px solid;
+    padding: 20px;
+}
