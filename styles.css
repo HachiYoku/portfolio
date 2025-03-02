@@ -1,121 +1,315 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body{
-    background-color: #fff;
+  background: linear-gradient(135deg, #000000, #0b100b, #172dce);
+  position: relative;
 }
+/* navbar  */
+.navbar {
+  background: black!important; 
+  border-radius: 30px;
+  border: 2px solid #5362d5;
+  padding: 7px 0px;
+  width: 900px;
+  position: sticky;
+  top: 20px;
+  z-index: 1;
+}
+
+
+.nav-bar a {
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  width: 150px;
+  font-size: 14px;
+  font-family: 'Quicksand',serif;
+  padding: 10px 10px;
+  margin: 0 5px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-bar a i {
+  margin-right:10px;
+}
+
+.nav-bar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  /* transform: scale(1.05); */
+}
+
+/* Active Link Styling */
+.nav-bar a.active {
+  background: white;
+  color: black !important;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
 .nav-bar {
-    margin: 20px;
-    height: 60px; 
-    border: 1px solid  #98eed1bf;
-    border-radius: 50px;
-    background-color: #fff;
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between;
-    padding: 0 20px; 
+  display: flex;
+  gap: 10px;
 }
 
-.logo-box {
-    display: flex;
-    align-items: center; /* Aligns logo and brand name vertically */
+@media (max-width: 991px) {
+  .nav-bar {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+  .nav-bar a {
+      width: 100%;
+      justify-content: center;
+  }
 }
 
-.logo {
-    width: 40px; /* Adjusted size for better fit */
-    height: auto;
-    border-radius: 50%;
-    margin-right: 10px;
+/* page decoration  */
+.circle-lg{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #5362d5;
+  position: absolute;
+  top: -220px;
+  right: -120px;
 }
 
-.brand-name {
-    font-size: 0.9rem;
-    font-weight: 300;
-    letter-spacing: 1px;
-    font-family: "PT Sans", sans-serif;
+.circle-md{
+  width: 130px;
+  height: 115px;
+  border-radius: 50%;
+  background-color: #5362d5;
+  position: absolute;
+  top: 330px;
+  left: 30px;
 }
 
-.nav-bar .book-btn {
-    width: 120px;
-    height: 40px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
+.circle-sm1{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #5362d5;
+  position: absolute;
+  top: 80px;
+  left: 20px;
 }
 
-#welcome-sec{
-    /* background-color: yellow; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.wc-content{
-    /* background-color: red; */
-    width: 40%;
-    height: 400px;
-    padding: 50px 0 0 20px;
-    margin: 0 100px;
+.circle-sm2{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #5362d5;
+  position: absolute;
+  top: 670px;
+  left: 240px;
 }
 
-.active-state {
-    background-color: #98eed1bf; 
-    border: 1px solid #98eed1; 
-    border-radius: 20px; 
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 5px;
-    margin-bottom: 20px;
-}
-.active-text{
-    color: #00a6b6; 
-    text-transform: uppercase; 
-    font-family: "PT Sans", sans-serif; 
-    font-weight: 400; 
-    font-size: 0.7em;
-    padding: 0 15px;
-}
-.available-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #00a6b6;
-    display: inline-block;
+.circle-xs{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #5362d5;
+  position: absolute;
+  top: 230px;
+  left: 140px;
 }
 
-.wc-content h1{
-    font-family: "Gilda Display", serif;
-    font-weight: 400;
-    font-size: 6rem;
-    margin-bottom: 20px;
+/* home-sec  */
+.home-sec{
+  margin-top: 50px;
+  height: 88vh;
 }
-.copy-right-icon{
-    margin-left: -20px;
-    font-size: 2rem;
+.img-sec{
+  /* border: 2px solid; */
+  
+  /* overflow: hidden; */
+  padding-left: 120px;
+  position: relative;
 }
-.wc-content .greeting-text{
-    font-family: "PT Sans", sans-serif; 
-    font-weight: 400; 
-    font-size: 1em;
-    margin-bottom: 20px;
+
+.profile-photo{
+  /* border: 1px solid; */
+  width: 100%;
+  text-align: center;
 }
-.contact-btn{
-    width: 120px;
-    height: 40px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
+.profile-photo img {
+  width: 600px;
+  height: 700px;
+  object-fit: cover;
+  position: absolute; 
+  top: -153px;
+  left: 200px;
 }
-#welcome-sec .img-sec{
-    background-color: rgb(81, 157, 183);
-    border: 1px solid;
-    padding: 20px;
+.pf-bg{
+  /* border: 2px solid; */
+  background-color: #5362d5;
+  width: 500px;
+  height: 500px;
+  margin-left: 90px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  position: relative;
+  
 }
+.img-text-firstname,
+.img-text-lastname{
+  font-family: "Archivo Black", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+  letter-spacing: 5px;
+  line-height: 70px;
+  font-size: 65px;
+}
+.img-text-firstname{
+  position: absolute;
+  top: 70px;
+  left: 250px;
+}
+.img-text-lastname{
+  position: absolute;
+  top: 130px;
+  left: 280px;
+}
+
+.social-link{
+  position: absolute;
+  top: 290px;
+  left: 240px;
+}
+.social-link h3{
+  font-family: "Funnel Sans", serif;  
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.social-acc{
+  display: flex;
+  gap: 7px;
+}
+
+.social-acc a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  background: black;
+  border-radius: 25%;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  /* z-index: 1; */
+}
+.social-acc a:hover {
+  border-radius: 15px;
+  background-color: transparent;
+  border:2px solid black;
+  color: black;
+}
+.social-icon i{
+  font-size: 24px;
+}
+.content-sec{
+  /* border: 2px solid; */
+}
+.main-text {
+  /* border: 1px solid; */
+  /* text-align: center; */
+  max-width: 800px;
+  margin: 110px 100px 100px 20px;
+  padding: 50px 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.main-text h3 {
+  font-size: 1.8rem;
+  color: #5362d5;
+  font-weight: 600;
+}
+
+.main-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin: 15px 0;
+}
+
+.main-text .name{
+  /* border: 1px solid; */
+  display: inline-block;
+  width: 400px;
+  color: #5362d5;
+}
+
+.main-text p {
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-home {
+  margin-top: 20px;
+}
+
+.cta-home .btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: #5362d5;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.cta-home .btn:hover{
+  border: 1px solid #5362d5;
+  color: white;
+  background-color: transparent;
+}
+
+.cta-home i {
+  margin-right: 8px;
+}
+
+/* footer-sec */
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.025); 
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: white;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 2px;
+}
+

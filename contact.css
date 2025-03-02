@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(135deg, #000000, #0b100b, #172dce);
+  position: relative;
+}
+/* navbar  */
+.navbar {
+  background: black!important; 
+  border-radius: 30px;
+  border: 2px solid #5362d5;
+  padding: 7px 0px;
+  width: 900px;
+  position: sticky;
+  top: 20px;
+  z-index: 1;
+}
+
+
+.nav-bar a {
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  width: 150px;
+  font-size: 14px;
+  font-family: 'Quicksand',serif;
+  padding: 10px 10px;
+  margin: 0 5px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-bar a i {
+  margin-right:10px;
+}
+
+.nav-bar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  /* transform: scale(1.05); */
+}
+
+/* Active Link Styling */
+.nav-bar a.active {
+  background: white;
+  color: black !important;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.nav-bar {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 991px) {
+  .nav-bar {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+  .nav-bar a {
+      width: 100%;
+      justify-content: center;
+  }
+}
+
+/* page decoration  */
+.circle-lg{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #5362d5;
+  position: absolute;
+  top: -220px;
+  right: -120px;
+}
+
+.circle-md{
+  width: 130px;
+  height: 115px;
+  border-radius: 50%;
+  background-color: #5362d5;
+  position: absolute;
+  top: 330px;
+  left: -70px;
+}
+
+.circle-sm1{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #5362d5;
+  position: absolute;
+  top: 80px;
+  left: 5px;
+}
+
+.circle-sm2{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #5362d5;
+  position: absolute;
+  top: -50px;
+  left: 240px;
+}
+
+.circle-xs{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #5362d5;
+  position: absolute;
+  top: 230px;
+  left: 40px;
+}
+
+/* contact-sec  */
+.contact-sec {
+  margin-top: 50px;
+  height: 88vh;
+}
+.img-sec {
+  /* border: 2px solid; */
+  height: auto;
+  /* overflow: hidden; */
+  padding-left: 50px;
+  position: relative;
+}
+
+.profile-photo {
+  /* border: 1px solid; */
+  width: 100%;
+  text-align: center;
+}
+.profile-photo img {
+  width: 600px;
+  height: 700px;
+  object-fit: cover;
+  position: absolute;
+  top: -153px;
+  left: 30px;
+}
+.pf-bg {
+  /* border: 2px solid; */
+  background-color: #5362d5;
+  width: 500px;
+  height: 500px;
+  margin-left: 50px;
+  border-radius: 15%;
+  position: relative;
+}
+
+.img-text-name {
+  font-family: "Archivo Black", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 56px;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px white;
+  /* letter-spacing: 3px; */
+  line-height: 70px;
+  position: absolute;
+  top: 380px;
+  left: 140px;
+}
+
+.job {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.text-head1{
+    position: absolute ;
+    top: 200px;
+    left: 120px;
+}
+.text-head2{
+    position: absolute;
+    top: 70px;
+    left: 300px;
+}
+
+.job-position {
+    font-family: "Archivo Black", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.role1{
+    position: absolute;
+    top: 260px;
+    left: 190px;
+}
+.role2{
+    position: absolute;
+    top: 130px;
+    left: 450px;
+}
+
+.content-sec{
+   /* border: 1px solid; */
+   padding-right: 100px;
+}
+.subhead{
+    font-family: "Funnel Sans", serif;
+    font-weight: 400;
+    margin-top: 50px;
+    color: white;
+}
+
+.line{
+    display: inline-block;
+    width: 505px;
+    border: 2px solid white;
+    border-radius: 1px;
+    margin-left: 20px;
+}
+
+.social-box{
+    margin: 10px;
+    /* border: 1px solid; */
+    padding: 10px;
+    width: 240px;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid #5362d5;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(255, 251, 251, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.social-box:hover{
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 2px solid #5362d5;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+.social-box a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background: black;
+    border-radius: 25%;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.social-box i{
+    font-size: 24px;
+}
+.social-box p{
+    color: white;
+    font-family: "Quicksand", serif;
+}
+
+.email-heading{
+  color: white;
+  font-family:"Funnel Sans", serif ;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+.content-sec .form-control{
+    background-color: transparent;
+    border: 2px solid;
+    border-color: white;
+    height: 50px;
+}
+
+.form-control::placeholder{
+  color: white;
+  font-family:"Quicksand", serif ;
+}
+
+.form-control:focus{
+  color: white;
+  font-family:"Quicksand", serif ;
+}
+.form-control:not(:placeholder-shown) {
+  color: white;
+}
+textarea{
+    height: 100px !important;
+    resize: none;
+}
+
+
+  
+.cta-home .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #5362d5;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+  
+.cta-home .btn:hover{
+    border: 1px solid #5362d5;
+    color: white;
+    background-color: transparent;
+}
+
+/* footer-sec */
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.025); 
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: white;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 2px;
+}
