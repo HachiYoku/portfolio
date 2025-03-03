@@ -25,38 +25,81 @@
 
     <title>Portfolio Testing</title>
     <style>
-      body {
-          background: linear-gradient(135deg, #1a105b, #75c6b0);
-          height: 100vh;
-          display: flex;
-          /* justify-content: center; */
-          /* align-items: center; */
-          /* flex-direction: column; */
+      /* Carousel item container */
+      .carousel-inner {
+        display: flex;
+        overflow: hidden;
       }
-
-      .footer {
-          width: 100%;
-          position: fixed;
-          bottom: 0;
-          text-align: center;
-          padding: 15px 0;
-          background: rgba(255, 255, 255, 0.1); /* Glass effect */
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-          border-top: 1px solid rgba(255, 255, 255, 0.2);
-          color: white;
-          font-size: 16px;
+  
+      .carousel-item {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
       }
-
-      
-  </style>
+  
+      .carousel-item > div {
+        flex: 1;
+        margin: 0 10px; /* Space between items */
+        min-width: 250px; /* Adjust width as needed */
+        height: 200px; /* Adjust height as needed */
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+  
+      /* Optional: Style for carousel cards */
+      .carousel-item > div h3 {
+        color: #333;
+      }
+  
+      /* Ensure the carousel items take full width */
+      .carousel-item {
+        flex: 0 0 auto;
+      }
+    </style>
 
   </head>
   <body>
-     <!-- footer -->
-     <footer class="footer">
-      Stay Inspired. Stay Creative. @HachiYoku 2025
-    </footer>
+     <!-- Bootstrap Carousel -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div>
+          <h3>Item 1</h3>
+        </div>
+        <div>
+          <h3>Item 2</h3>
+        </div>
+        <div>
+          <h3>Item 3</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div>
+          <h3>Item 2</h3>
+        </div>
+        <div>
+          <h3>Item 3</h3>
+        </div>
+        <div>
+          <h3>Item 4</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div>
+          <h3>Item 3</h3>
+        </div>
+        <div>
+          <h3>Item 4</h3>
+        </div>
+        <div>
+          <h3>Item 5</h3>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
