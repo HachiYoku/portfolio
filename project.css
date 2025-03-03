@@ -80,7 +80,7 @@
   }
 
 
-  /* project section  */
+  /* project-sec  */
   .project-sec{
     height: 100vh;
     margin-top: 50px;
@@ -169,7 +169,6 @@
 /* footer-sec */
 .footer {
   width: 100%;
-  position: fixed;
   bottom: 0;
   text-align: center;
   padding: 15px 0;
@@ -182,3 +181,124 @@
   letter-spacing: 2px;
 }
 
+@media screen and (max-width:1024px){
+  /* project section  */
+  .project-sec{
+    height: 100%;
+    margin-top: 50px;
+  }
+
+  .project-sec-1,
+  .project-sec-2,
+  .project-sec-3 {
+    padding: 0 20px;
+  }
+
+  .project-sec-1 .card,
+  .project-sec-2 .card,
+  .project-sec-3 .card{
+
+    width: 280px;
+    height: 150px;
+
+ }
+ 
+ .card-title {
+       font-size: 1em;
+       margin-bottom: 10px;
+       color: white;
+       font-family: "Quicksand", serif;
+ }
+ 
+ 
+ .cta-home{
+    position: absolute;
+    top: 90px;
+    left: 220px;
+  }
+
+.cta-home .btn {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+
+ }
+}
+
+@media screen and (max-width:768px){
+  .navbar {
+    
+    width: 700px;
+    
+  }
+  .card{
+    width: 400px !important;
+    height: 230px !important;
+ }
+ .carousel-item img {
+    height: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 15px;
+    /* height: auto; */
+    display: block;
+ }
+ 
+ 
+ .cta-home{
+    position: absolute;
+    top: 150px !important;
+    left: 320px !important;
+  }
+
+
+}
+
+@media screen and (max-width:425px){
+  .navbar {
+    
+    width: 400px;
+    
+  }
+  .card{
+    width: 300px !important;
+    height: 170px !important;
+    margin: 10px auto;
+ }
+
+ 
+ .cta-home{
+    position: absolute;
+    top: 100px !important;
+    left: 230px !important;
+  }
+  
+    /* footer-sec */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+}
+
+@media screen and (max-width:375px){
+  /* navbar  */
+  .navbar {
+    
+    width: 300px;
+    
+  }
+  .card{
+    width: 280px !important;
+    height: 150px !important;
+    margin: 10px auto;
+ }
+
+ .cta-home{
+    position: absolute;
+    top: 90px !important;
+    left: 220px !important;
+  }
+}  

@@ -135,6 +135,8 @@ body{
   margin-top: 50px;
   height: 88vh;
 }
+
+
 .img-sec{
   /* border: 2px solid; */
   
@@ -231,9 +233,7 @@ body{
 .social-icon i{
   font-size: 24px;
 }
-.content-sec{
-  /* border: 2px solid; */
-}
+
 .main-text {
   /* border: 1px solid; */
   /* text-align: center; */
@@ -300,7 +300,6 @@ body{
 /* footer-sec */
 .footer {
   width: 100%;
-  position: fixed;
   bottom: 0;
   text-align: center;
   padding: 15px 0;
@@ -312,4 +311,299 @@ body{
   font-family: "Quicksand", sans-serif;
   letter-spacing: 2px;
 }
+
+@media  screen and (max-width:1024px) {
+  /* home-sec  */
+.home-sec{
+  margin-top: 50px;
+  height: 100%;
+}
+
+
+.img-sec{
+
+  width: 400px;
+  
+  padding-left: 10px;
+
+}
+
+.profile-photo img {
+  top: -153px;
+  left: 20px;
+}
+.pf-bg{
+  margin-left: 30px;
+}
+
+.img-text-firstname{
+  position: absolute;
+  top: 70px;
+  left: 50px;
+}
+.img-text-lastname{
+  position: absolute;
+  top: 130px;
+  left: 80px;
+}
+
+.social-link{
+  position: absolute;
+  top: 290px;
+  left: 60px;
+}
+
+
+.main-text {
+
+  max-width: 500px;
+  margin: 100px 0px 100px 70px;
+  padding: 30px 20px;
+  
+}
+
+
+.main-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin: 15px 0;
+}
+
+.main-text .name{
+  width: 400px;
+}
+
+
+
+.cta-home {
+  margin-top: 20px;
+}
+}
+
+
+@media screen and (max-width:768px){
+
+/* navbar  */
+.navbar {
+  
+  width: 700px;
+
+}  
+
+  /* home-sec  */
+.home-sec{
+  height: 100%;
+}
+
+
+.img-sec{
+  /* border: 2px solid white; */
+  
+  /* overflow: hidden; */
+  padding-left: 20px;
+  position: relative;
+}
+
+.profile-photo img {
+  width: 300px;
+  height: 400px;
+  top: -51px;
+  left: 70px;
+}
+.pf-bg{
+  /* border: 2px solid; */
+  width: 300px;
+  height: 300px;
+  position: relative;
+  
+}
+.img-text-firstname,
+.img-text-lastname{
+  line-height: 30px;
+  font-size: 32px;
+}
+.img-text-firstname{
+  position: absolute;
+  top: 70px;
+  left: 60px;
+}
+.img-text-lastname{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.social-link{
+  position: absolute;
+  top: 120px;
+  left: 440px;
+}
+
+
+.social-acc a {
+  width: 55px;
+  height: 55px;
+  font-size: 18px;
+
+}
+.social-acc a:hover {
+  border:2px solid white;
+  color: white;
+}
+
+
+.main-text {
+  max-width: 800px;
+  margin: 20px 0px 100px 20px;
+  padding: 10px 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.main-text h3 {
+  font-size: 1.5rem;
+}
+
+.main-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+}
+
+.main-text .name{
+  width: 400px;
+}
+
+.main-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.cta-home {
+  margin-top: 10px;
+}
+
+.cta-home .btn {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+}
+
+@media screen and (max-width:425px){
+  /* navbar  */
+.navbar {
+  
+  width: 400px;
+
+}  
+
+  /* home-sec  */
+.main-text {
+  max-width: 800px;
+  margin: 20px 0px 100px 20px;
+  padding: 10px 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.main-text h3 {
+  font-size: 1.5rem;
+}
+
+.main-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+}
+
+.main-text .name{
+  width: 0px;
+}
+
+.main-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.cta-home {
+  margin-top: 10px;
+}
+
+.cta-home .btn {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+/* footer-sec */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+}
+@media screen and (max-width:375px){
+  /* navbar  */
+  .navbar {
+  
+    width: 300px;
+  
+  }
+  .main-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }  
+}
+
+@media screen and (max-width:320px){
+  .img-sec{
+    /* border: 2px solid white; */
+    
+    /* overflow: hidden; */
+    padding-left: 0px;
+    position: relative;
+  }
+  
+  .profile-photo img {
+    width: 300px;
+    height: 400px;
+    top: -51px;
+    left: 70px;
+  }
+  .pf-bg{
+    /* border: 2px solid; */
+    width: 300px;
+    height: 300px;
+    position: relative;
+    
+  }
+  .img-text-firstname,
+  .img-text-lastname{
+    line-height: 30px;
+    font-size: 32px;
+  }
+  .img-text-firstname{
+    position: absolute;
+    top: 70px;
+    left: 60px;
+  }
+  .img-text-lastname{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+  }
+  .main-text h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+  }
+}
+
+
 
