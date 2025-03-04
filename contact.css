@@ -133,7 +133,7 @@ body {
 /* contact-sec  */
 .contact-sec {
   margin-top: 50px;
-  height: 88vh;
+  height: 100vh;
 }
 .img-sec {
   /* border: 2px solid; */
@@ -234,7 +234,7 @@ body {
 
 .line{
     display: inline-block;
-    width: 505px;
+    width: 500px;
     border: 2px solid white;
     border-radius: 1px;
     margin-left: 20px;
@@ -244,7 +244,7 @@ body {
     margin: 10px;
     /* border: 1px solid; */
     padding: 10px;
-    width: 240px;
+    width: 230px;
     background: rgba(255, 255, 255, 0.1);
     text-align: center;
     border-radius: 15px;
@@ -337,7 +337,7 @@ textarea{
 /* footer-sec */
 .footer {
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   text-align: center;
   padding: 15px 0;
@@ -348,4 +348,193 @@ textarea{
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width:1024px){
+  .img-sec {
+    /* border: 2px solid white; */
+    height: auto;
+    padding-left: 20px;
+  }
+  
+  .profile-photo img {
+    width: 400px;
+    height: 500px;
+    top: -51px;
+    left: 20px;
+  }
+  .pf-bg {
+    width: 400px;
+    height: 400px;
+    margin-left: 0px;
+  }
+  
+  .img-text-name {
+    font-size: 40px;
+    top: 350px;
+    left: 80px;
+  }
+  
+  .job {
+    font-size: 40px;
+  }
+  
+  .text-head1{
+      position: absolute ;
+      top: 180px;
+      left: 50px;
+  }
+  .text-head2{
+      top: 70px;
+      left: 160px;
+  }
+  
+  .job-position {
+      font-size: 16px;
+  }
+  
+  .role1{
+
+      top: 230px;
+      left: 90px;
+  }
+  .role2{
+      top: 120px;
+      left: 260px;
+  }
+  .content-sec{
+    /* border: 1px solid; */
+    padding-right: 20px;
+ }
+ .subhead{
+  font-size: 24px;
+ }
+ .line{
+     display: inline-block;
+     width: 380px;
+ }
+ 
+ .social-box{
+     margin: 0 10px !important;
+     /* border: 1px solid; */
+     padding: 10px !important;
+     width: 180px;
+ }
+
+ .social-box a {
+     width: 40px;
+     height: 40px;
+ }
+ .social-box i{
+     font-size: 16px;
+ }
+ .social-box p{
+     font-size: 16px;
+     color: white;
+     font-family: "Quicksand", serif;
+ }
+ 
+ .content-sec .form-control{
+     background-color: transparent;
+     border: 2px solid;
+     border-color: white;
+     height: 50px;
+ }
+ 
+ .form-control::placeholder{
+   color: white;
+   font-family:"Quicksand", serif ;
+ }
+ 
+ .form-control:focus{
+   color: white;
+   font-family:"Quicksand", serif ;
+ }
+ .form-control:not(:placeholder-shown) {
+   color: white;
+ }
+ textarea{
+     height: 80px !important;
+     resize: none;
+ }
+ 
+ 
+   
+ .cta-home .btn {
+     display: inline-block;
+     padding: 12px 20px;
+     font-size: 1rem;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: white;
+     background-color: #5362d5;
+     border-radius: 8px;
+     transition: all 0.3s ease-in-out;
+ }
+   
+ .cta-home .btn:hover{
+     border: 1px solid #5362d5;
+     color: white;
+     background-color: transparent;
+ }
+}
+
+@media screen and (max-width:768px){
+  .navbar{
+    width: 700px;
+  }
+  .contact-sec{
+    height: 100%;
+    margin-top: 20px;
+  }
+  
+  .content-sec{
+    padding: 0 20px;
+  }
+  .subhead{
+    /* border: 1px solid white; */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  .line{
+    display: none;
+}
+  .social{
+    margin: 0 0 20px 80px;
+  }
+  .cta-home{
+    /* border: 1px solid white; */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width:425px){
+  .navbar{
+    width: 400px;
+  }
+  .social-box{
+    margin:0 0 10px 0px  !important;
+    width: 250px;
+  }
+    /* footer-sec */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+}
+
+@media screen and (max-width:375px){
+  .navbar{
+    width: 300px;
+  }
+  .social-box{
+    margin:0 0 10px 0px  !important;
+    width: 200px;
+  }
 }
