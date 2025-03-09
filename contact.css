@@ -149,12 +149,12 @@ body {
   text-align: center;
 }
 .profile-photo img {
-  width: 600px;
-  height: 700px;
+  width: 350px;
+  height: 450px;
   object-fit: cover;
   position: absolute;
-  top: -153px;
-  left: 30px;
+  top: 99px;
+  left: 190px;
 }
 .pf-bg {
   /* border: 2px solid; */
@@ -234,7 +234,7 @@ body {
 
 .line{
     display: inline-block;
-    width: 500px;
+    width: 510px;
     border: 2px solid white;
     border-radius: 1px;
     margin-left: 20px;
@@ -244,7 +244,7 @@ body {
     margin: 10px;
     /* border: 1px solid; */
     padding: 10px;
-    width: 230px;
+    width: 240px;
     background: rgba(255, 255, 255, 0.1);
     text-align: center;
     border-radius: 15px;
@@ -351,57 +351,87 @@ textarea{
 }
 
 @media screen and (max-width:1024px){
+  .contact-sec {
+    margin-top: 20px;
+    height: 100vh;
+  }
+
   .img-sec {
     /* border: 2px solid white; */
     height: auto;
-    padding-left: 20px;
+    overflow: hidden;
+    padding-left: 40px;
+    margin-right: 0px;
+    position: relative;
   }
   
   .profile-photo img {
-    width: 400px;
-    height: 500px;
-    top: -51px;
-    left: 20px;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 118px;
+    left: 100px;
   }
   .pf-bg {
-    width: 400px;
-    height: 400px;
-    margin-left: 0px;
+    /* border: 2px solid white; */
+    width: 370px;
+    height: 370px;
+    margin-left: 0px !important;
+    border-radius: 15%;
+    margin-right: 0px !important;
+    position: relative;
   }
   
   .img-text-name {
     font-size: 40px;
-    top: 350px;
+    /* letter-spacing: 3px; */
+    line-height: 70px;
+    position: absolute;
+    top:320px;
     left: 80px;
   }
   
   .job {
+    font-family: "Archivo Black", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 40px;
+    letter-spacing: 3px;
+    color: white;
   }
   
   .text-head1{
       position: absolute ;
-      top: 180px;
-      left: 50px;
+      top: 150px;
+      left: 48px;
   }
   .text-head2{
+      position: absolute;
       top: 70px;
-      left: 160px;
+      left: 170px;
   }
   
   .job-position {
+      font-family: "Archivo Black", serif;
+      font-weight: 100;
+      font-style: normal;
       font-size: 16px;
+      letter-spacing: 3px;
+      color: white;
   }
   
   .role1{
-
-      top: 230px;
-      left: 90px;
+      position: absolute;
+      top: 200px;
+      left: 85px;
   }
   .role2{
+      position: absolute;
       top: 120px;
-      left: 260px;
+      left: 270px;
   }
+
   .content-sec{
     /* border: 1px solid; */
     padding-right: 20px;
@@ -411,14 +441,14 @@ textarea{
  }
  .line{
      display: inline-block;
-     width: 380px;
+     width: 370px;
  }
  
  .social-box{
      margin: 0 10px !important;
      /* border: 1px solid; */
      padding: 10px !important;
-     width: 180px;
+     width: 175px;
  }
 
  .social-box a {
@@ -434,6 +464,10 @@ textarea{
      font-family: "Quicksand", serif;
  }
  
+ .email-box{
+  /* border: 1px solid white; */
+  padding-right: 20px !important;
+ }
  .content-sec .form-control{
      background-color: transparent;
      border: 2px solid;
@@ -453,9 +487,9 @@ textarea{
  .form-control:not(:placeholder-shown) {
    color: white;
  }
- textarea{
-     height: 80px !important;
-     resize: none;
+ .text-area-box{
+   /* border: 1px solid white;   */
+   padding-right: 20px !important; 
  }
  
  
@@ -502,7 +536,14 @@ textarea{
     display: none;
 }
   .social{
-    margin: 0 0 20px 80px;
+    margin: 0px;
+  }
+
+  .email-box{
+    padding-right: 0px !important;
+  }
+  .text-area-box{
+    padding-right: 0px !important;
   }
   .cta-home{
     /* border: 1px solid white; */
@@ -535,6 +576,13 @@ textarea{
   }
   .social-box{
     margin:0 0 10px 0px  !important;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width:320px){
+  .social-box{
+    margin:0 10px 10px 0px  !important;
     width: 200px;
   }
 }

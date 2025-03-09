@@ -235,12 +235,12 @@
     text-align: center;
   }
   .profile-photo img {
-    width: 600px;
-    height: 700px;
+    width: 350px;
+    height: 450px;
     object-fit: cover;
     position: absolute;
-    top: -153px;
-    left: -50px;
+    top: 99px;
+    left: 120px;
   }
   .pf-bg {
     /* border: 2px solid; */
@@ -310,7 +310,7 @@
   /* my skill  */
 .skill-section {
     /* border: 1px solid white; */
-    /* text-align: center; */
+
     margin-bottom: 50px;
 }
 .skill-heading{
@@ -328,7 +328,13 @@
     color: white !important;
 }
 
+.skill-col-1,
+.skill-col-2{
+  /* border: 1px solid white; */
+  padding-left: 50px;
+}
 .skill-progress{
+  /* border: 1px solid white; */
   position: relative;
 }
 .skill-progress p {
@@ -345,7 +351,7 @@
     color: white;
     position: absolute;
     top: 10px;
-    left: 560px;
+    left: 520px;
 }
 
 .progress-bar {
@@ -415,60 +421,152 @@
 @media screen and (max-width:1024px){
   .about-sec {
     margin-top: 0px !important;
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
     width: 100%;
     /* border: 1px solid white; */
   }
   
   .content-sec{
     /* border: 1px solid white; */
-    width: 100%;
+    margin-left: 0px !important;
+    padding: 0px !important;
   }
+
   .p-info{
-    margin-top: 30px !important;
-    text-align: center;
+    font-family: "Funnel Sans", serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
     /* border:1px solid white; */
-    margin-left:20px;
+    padding: 0px;
   }
 
   .line{
-    display: none;
+    display: inline-block;
+    width: 230px;
+    /* border: 2px solid white; */
+    border-radius: 1px;
+    margin-left: 20px;
+  }
+
+  .first-col ul{
+    /* border: 1px solid white; */
+    list-style: none;
+    padding: 0px !important;
   }
 
   .first-col li{
     /* border: 1px solid white; */
-    padding:0 0 0 150px;
+    color: white;
+    margin-top: 30px;
+    padding:0px;
   }
-
 
   .second-col ul{
     /* border: 1px solid white; */
     list-style: none;
+    padding: 0px !important;
   }
 
   .second-col li{
     /* border: 1px solid white; */
+    color: white;
     margin-top: 30px;
-    padding: 0 0 0 20px;
+    padding:0px;
   }
-  .first-col span,
-  .second-col span{
-    color:white;
-    font-weight: bold;
-    margin-right: 30px;
-  }
+  
 
   .cta-home{
     /* border: 1px solid white; */
-    text-align: center;
-    padding: 20px 0;
+    padding: 0px;
   }
 
 
+    .img-sec {
+      /* border: 2px solid white; */
+      height: auto;
+      overflow: hidden;
+      padding-left: 20px;
+      margin-left: 0px;
+      position: relative;
+    }
+    
+    .profile-photo img {
+      width: 250px;
+      height: 300px;
+      object-fit: cover;
+      position: absolute;
+      top: 117px;
+      left: 100px;
+    }
+    .pf-bg {
+      /* border: 2px solid white; */
+      background-color: #5362d5;
+      width: 370px;
+      height: 370px;
+      margin-left: 0px !important;
+      border-radius: 15%;
+      margin-right: 0px !important;
+      position: relative;
+    }
+    
+    .img-text-name {
+      font-size: 40px;
+      color: transparent;
+      text-transform: uppercase;
+      -webkit-text-stroke: 1px white;
+      /* letter-spacing: 3px; */
+      line-height: 70px;
+      position: absolute;
+      top:320px;
+      left: 60px;
+    }
+    
+    .job {
+      font-family: "Archivo Black", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 45px;
+      letter-spacing: 3px;
+      color: white;
+    }
+    
+    .text-head1{
+        position: absolute ;
+        top: 150px;
+        left: 28px;
+    }
+    .text-head2{
+        position: absolute;
+        top: 70px;
+        left: 130px;
+    }
+    
+    .job-position {
+        font-family: "Archivo Black", serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 16px;
+        letter-spacing: 3px;
+        color: white;
+    }
+    
+    .role1{
+        position: absolute;
+        top: 200px;
+        left: 80px;
+    }
+    .role2{
+        position: absolute;
+        top: 120px;
+        left: 255px;
+    }
+
     /* my skill  */
 .skill-section {
-  /* border: 1px solid white; */
-  /* text-align: center; */
+  margin-top: 50px !important;
   margin-bottom: 50px;
   padding: 0 0 0 30px;
 }
@@ -487,9 +585,13 @@
     font-family: "Funnel Sans", serif;
     color: white !important;
 }
-.skill-progress{
-position: relative;
+
+.skill-col-1,
+.skill-col-2{
+  /* border: 1px solid white; */
+  padding-left: 0px !important;
 }
+
 .skill-progress p {
   font-size: 20px;
   font-family: 'Quicksand',serif;
@@ -504,13 +606,9 @@ position: relative;
   color: white;
   position: absolute;
   top: 10px;
-  left: 360px;
+  left: 380px;
 }
 
-.progress-bar {
-  background-color: #5a48d6;
-  border-radius: 5px;
-}
  
 /* Tech-Stack-sec */
 .tech-stack-sec {
@@ -559,17 +657,67 @@ position: relative;
     width: 700px;
     
   }
+  .content-sec{
+    /* border: 1px solid white; */
+    margin-left: 0px !important;
+    padding: 0px !important;
+    width: 100%;
+  }
+
+  .line{
+    display: none !important;
+  }
+
+  .p-info{
+    margin-bottom: 20px;
+    /* border:1px solid white; */
+    text-align: center;
+  }
+
+  .line{
+    display: inline-block;
+    width: 230px;
+    /* border: 2px solid white; */
+    border-radius: 1px;
+    margin-left: 20px;
+  }
+
+  .first-col ul{
+    /* border: 1px solid white; */
+    list-style: none;
+    padding: 0 0 0 40px !important;
+  }
+
   .first-col li{
     /* border: 1px solid white; */
-    padding:0 0 0 50px;
+    color: white;
+    margin-top: 20px;
+    padding:0px;
+  }
+
+  .second-col ul{
+    /* border: 1px solid white; */
+    list-style: none;
+    padding: 0 0 0 40px !important;
+  }
+
+  .second-col li{
+    /* border: 1px solid white; */
+    color: white;
+    margin-top: 20px;
+    padding:0px;
+  }
+  
+
+  .cta-home{
+    /* border: 1px solid white; */
+    padding: 0px;
+    text-align: center;
   }
 
       /* my skill  */
 .skill-section {
-  /* border: 1px solid white; */
-  /* text-align: center; */
-  margin-bottom: 50px;
-  /* padding: 0 0 0 30px; */
+
 }
 
 .skill-heading{
@@ -588,8 +736,6 @@ position: relative;
   
 }
 .progress-percent{
-  color: white;
-  position: absolute;
   top: 10px;
   left: 230px;
 }
@@ -610,15 +756,58 @@ position: relative;
   .p-info{
     font-size: 24px;
   }
-  .first-col li{
+  .cta-home{
     /* border: 1px solid white; */
-    padding:0 0 0 20px;
+    text-align: start;
+    padding: 0 40px !important;
   }
+  .cta-home .btn {
+    font-size: 0.8rem;
+    }
+
   .skill-heading{
     font-size: 24px;
+    text-align: center;
   }
+
+  .progress-percent{
+    top: 10px;
+    left: 300px;
+  }
+  
   .tech-stack-heading{
+    font-size: 20px;
+  }
+  .tech-stack-sec {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .tech-stack-heading {
     font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .tech-col-1, .tech-col-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 14rem;
+  }
+
+  
+
+  .card-text {
+    font-size: 14px;
   }
 
   /* footer-sec */
@@ -650,40 +839,19 @@ position: relative;
   .skill-title{
     font-size: 18px;
   }
-
-  .tech-stack-heading{
+  .tech-stack-heading {
     font-size: 20px;
   }
-  .tech-stack-sec {
-    height: auto;
-    padding: 30px 15px;
+  .progress-percent{
+    top: 10px;
+    left: 250px;
   }
+}
 
-  .tech-stack-heading {
-    font-size: 32px;
-    margin-bottom: 20px;
+
+@media screen and (max-width:320px){
+  .progress-percent{
+    top: 10px;
+    left: 180px;
   }
-
-  .tech-col-1, .tech-col-2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .col-3 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .card {
-    width: 90%;
-    max-width: 14rem;
-  }
-
-  
-
-  .card-text {
-    font-size: 14px;
-  }
-
 }

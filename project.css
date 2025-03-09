@@ -188,11 +188,7 @@
     margin-top: 50px;
   }
 
-  .project-sec-1,
-  .project-sec-2,
-  .project-sec-3 {
-    padding: 0 20px;
-  }
+  
 
   .project-sec-1 .card,
   .project-sec-2 .card,
@@ -302,3 +298,17 @@
     left: 220px !important;
   }
 }  
+
+@media screen and (max-width:320px){
+  .project-sec-1,
+  .project-sec-2,
+  .project-sec-3 {
+    padding: 0px;
+  }
+
+  .card{
+    width: 280px !important;
+    height: 150px !important;
+    margin: 10px 0px !important;
+ }
+}

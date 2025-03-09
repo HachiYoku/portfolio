@@ -146,17 +146,17 @@ body{
 }
 
 .profile-photo{
-  /* border: 1px solid; */
+  /* border: 1px solid white; */
   width: 100%;
   text-align: center;
 }
 .profile-photo img {
-  width: 600px;
-  height: 700px;
+  width: 400px;
+  height: 450px;
   object-fit: cover;
   position: absolute; 
-  top: -153px;
-  left: 200px;
+  top: 100px;
+  left: 370px;
 }
 .pf-bg{
   /* border: 2px solid; */
@@ -219,7 +219,6 @@ body{
   border-radius: 25%;
   text-decoration: none;
   color: white;
-  font-size: 18px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   /* z-index: 1; */
@@ -268,6 +267,7 @@ body{
   color: white;
   line-height: 1.6;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .cta-home {
@@ -323,51 +323,86 @@ body{
 .img-sec{
 
   width: 400px;
-  
+  /* border: 1px solid white; */
   padding-left: 10px;
 
 }
 
 .profile-photo img {
-  top: -153px;
-  left: 20px;
+  width: 250px;
+  height: 350px;
+  top: 70px;
+  left: 240px;
 }
 .pf-bg{
-  margin-left: 30px;
+  width: 370px;
+  height: 370px;
 }
 
 .img-text-firstname{
-  position: absolute;
+  font-size: 50px;
   top: 70px;
-  left: 50px;
+  left: 120px;
 }
 .img-text-lastname{
-  position: absolute;
-  top: 130px;
-  left: 80px;
+  font-size: 50px;
+  top: 120px;
+  left: 150px;
 }
 
 .social-link{
   position: absolute;
-  top: 290px;
-  left: 60px;
+  top: 230px;
+  left: 120px;
 }
 
+.social-link h3{
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.social-acc{
+  display: flex;
+  gap: 7px;
+}
+
+.social-acc a {
+  width: 45px;
+  height: 45px;
+}
+.social-icon i{
+  font-size: 22px;
+}
 
 .main-text {
-
   max-width: 500px;
-  margin: 100px 0px 100px 70px;
+  margin: 50px 30px 50px 0px;
   padding: 30px 20px;
   
 }
 
 
 .main-text h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
   margin: 15px 0;
+  /* border: 1px solid white; */
+}
+
+.main-text .name{
+  /* border: 1px solid white; */
+  display: inline-block;
+  width: 300px !important;
+  color: #5362d5;
+}
+
+.main-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+  padding-right: 20px;
 }
 
 .main-text .name{
@@ -396,88 +431,66 @@ body{
   height: 100%;
 }
 
-
 .img-sec{
-  /* border: 2px solid white; */
-  
-  /* overflow: hidden; */
-  padding-left: 20px;
-  position: relative;
+  padding-left: 20px !important;
 }
 
 .profile-photo img {
-  width: 300px;
-  height: 400px;
-  top: -51px;
-  left: 70px;
+  width: 250px;
+  height: 350px;
+  top: 70px;
+  left: 180px;
 }
 .pf-bg{
-  /* border: 2px solid; */
-  width: 300px;
-  height: 300px;
-  position: relative;
-  
+  margin-left: 20px !important;
+  width: 370px;
+  height: 370px;
 }
-.img-text-firstname,
-.img-text-lastname{
-  line-height: 30px;
-  font-size: 32px;
-}
+
 .img-text-firstname{
-  position: absolute;
+  font-size: 50px;
   top: 70px;
-  left: 60px;
+  left: 50px;
 }
 .img-text-lastname{
-  position: absolute;
-  top: 100px;
-  left: 100px;
+  font-size: 50px;
+  top: 120px;
+  left: 70px;
 }
 
 .social-link{
   position: absolute;
-  top: 120px;
-  left: 440px;
-}
-
-
-.social-acc a {
-  width: 55px;
-  height: 55px;
-  font-size: 18px;
-
-}
-.social-acc a:hover {
-  border:2px solid white;
-  color: white;
+  top: 230px;
+  left: 60px;
 }
 
 
 .main-text {
-  max-width: 800px;
-  margin: 20px 0px 100px 20px;
+  margin: 70px 0px 50px 0px;
   padding: 10px 20px;
-  font-family: "Quicksand", sans-serif;
 }
 
 .main-text h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .main-text h1 {
-  font-size: 3rem;
+  /* border: 1px solid white; */
+  font-size: 2rem !important;
   font-weight: bold;
   color: white;
   margin: 10px 0;
 }
 
 .main-text .name{
-  width: 400px;
+  /* border: 1px solid white; */
+  width: 200px !important;
 }
 
 .main-text p {
-  font-size: 1.1rem;
+  font-size: 0.6 rem !important;
   line-height: 1.6;
+  padding-right: 20px;
 }
 
 .cta-home {
@@ -526,6 +539,7 @@ body{
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: justify;
+  padding-right: 20px;
 }
 
 .cta-home {
@@ -553,6 +567,54 @@ body{
     width: 300px;
   
   }
+  .profile-photo img {
+    width: 220px;
+    height: 270px;
+    top: 79px;
+    left: 150px;
+  }
+  .pf-bg{
+    width: 300px;
+    height: 300px;
+  }
+
+  .img-text-firstname,
+  .img-text-lastname{
+    font-size: 36px;
+  }
+  .img-text-firstname{
+    top: 70px;
+    left: 50px;
+  }
+  .img-text-lastname{
+    top: 110px;
+    left: 80px;
+  }
+
+  .social-link{
+    top: 200px;
+    left: 60px;
+  }
+  
+  .social-link h3{
+    font-size: 0.8rem;
+    color: white;
+    letter-spacing: 2px;
+  }
+  
+  .social-acc{
+    display: flex;
+    gap: 5px;
+  }
+  
+  .social-acc a {
+    width: 35px;
+    height: 35px;
+  }
+  .social-icon i{
+    font-size: 16px;
+  }
+
   .main-text p {
     font-size: 1rem;
     line-height: 1.5;
@@ -561,31 +623,22 @@ body{
 }
 
 @media screen and (max-width:320px){
-  .img-sec{
-    /* border: 2px solid white; */
-    
-    /* overflow: hidden; */
-    padding-left: 0px;
-    position: relative;
-  }
-  
+ 
   .profile-photo img {
-    width: 300px;
-    height: 400px;
-    top: -51px;
-    left: 70px;
+    width: 200px;
+    height: 250px;
+    top: 49px;
+    left: 110px;
   }
   .pf-bg{
-    /* border: 2px solid; */
-    width: 300px;
-    height: 300px;
-    position: relative;
-    
+    width: 250px;
+    height: 250px;
   }
+
   .img-text-firstname,
   .img-text-lastname{
     line-height: 30px;
-    font-size: 32px;
+    font-size: 24px;
   }
   .img-text-firstname{
     position: absolute;
@@ -595,10 +648,34 @@ body{
   .img-text-lastname{
     position: absolute;
     top: 100px;
-    left: 100px;
+    left: 80px;
   }
+
+  .social-link{
+    top: 150px;
+    left: 60px;
+  }
+  .social-link h3{
+    font-size: 0.5rem;
+    color: white;
+    letter-spacing: 2px;
+  }
+  
+  .social-acc{
+    display: flex;
+    gap: 5px;
+  }
+  
+  .social-acc a {
+    width: 25px;
+    height: 25px;
+  }
+  .social-icon i{
+    font-size: 14px;
+  }
+
   .main-text h1 {
-    font-size: 2rem;
+    font-size: 20px !important;
     font-weight: bold;
     color: white;
     margin: 10px 0;
