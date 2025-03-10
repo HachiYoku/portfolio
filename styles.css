@@ -151,7 +151,7 @@ body{
   text-align: center;
 }
 .profile-photo img {
-  width: 400px;
+  width: 350px;
   height: 450px;
   object-fit: cover;
   position: absolute; 
@@ -568,9 +568,9 @@ body{
   
   }
   .profile-photo img {
-    width: 220px;
-    height: 270px;
-    top: 79px;
+    width: 200px;
+    height: 250px;
+    top: 100px;
     left: 150px;
   }
   .pf-bg{
@@ -625,10 +625,10 @@ body{
 @media screen and (max-width:320px){
  
   .profile-photo img {
-    width: 200px;
-    height: 250px;
-    top: 49px;
-    left: 110px;
+    width: 180px;
+    height: 230px;
+    top: 69px;
+    left: 120px;
   }
   .pf-bg{
     width: 250px;
