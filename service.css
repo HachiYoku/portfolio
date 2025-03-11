@@ -159,6 +159,14 @@
       background-color: #6576f5;
   }
 
+  .animate__backInRight,
+  .animate__backInLeft{
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+  }
+
+
+
 /* footer-sec */
 .footer {
   width: 100%;
@@ -261,6 +269,7 @@
     font-size: 0.8rem;
 
   }
+
     /* footer-sec */
 .footer {
   width: 100%;
