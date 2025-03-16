@@ -417,8 +417,7 @@
   letter-spacing: 2px;
 }
 
-
-@media screen and (max-width:1024px){
+@media screen and (max-width:1180px){
   .about-sec {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
@@ -649,6 +648,8 @@
 }
 
 }
+
+
 
 @media screen and (max-width:768px){
   /* navbar  */
