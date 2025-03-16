@@ -249,6 +249,22 @@
 
 }
 
+@media screen and (max-width:480px){
+  .navbar{
+    width: 430px;
+  }
+
+     /* footer-sec */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+}
+
+
 @media screen and (max-width:425px){
   .navbar {
     
@@ -268,14 +284,6 @@
     left: 230px !important;
   }
   
-    /* footer-sec */
-.footer {
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 12px;
-  letter-spacing: 1px;
-}
 
 }
 

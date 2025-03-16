@@ -746,12 +746,9 @@
 }
 }
 
-@media screen and (max-width:425px){
-  /* navbar  */
-  .navbar {
-    
-    width: 400px;
-    
+@media screen and (max-width:480px){
+  .navbar{
+    width: 430px;
   }
   .p-info{
     font-size: 24px;
@@ -769,10 +766,18 @@
     font-size: 24px;
     text-align: center;
   }
+  .skill-col-1,
+  .skill-col-2{
+    margin-left: 10px;
+  }
+
+  .skill-title{
+    margin-top: 20px;
+  }
 
   .progress-percent{
     top: 10px;
-    left: 300px;
+    left: 350px;
   }
   
   .tech-stack-heading{
@@ -810,7 +815,7 @@
     font-size: 14px;
   }
 
-  /* footer-sec */
+    /* footer-sec */
 .footer {
   width: 100%;
   text-align: center;
@@ -818,6 +823,23 @@
   font-size: 12px;
   letter-spacing: 1px;
 }
+}
+
+
+@media screen and (max-width:425px){
+  /* navbar  */
+  .navbar {
+    
+    width: 400px;
+    
+  }
+
+  .progress-percent{
+    top: 10px;
+    left: 300px;
+  }
+
+
 }
 
 @media screen and (max-width:375px){

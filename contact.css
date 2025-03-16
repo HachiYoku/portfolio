@@ -552,22 +552,33 @@ textarea{
   }
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:480px){
   .navbar{
-    width: 400px;
+    width: 430px;
   }
+
   .social-box{
     margin:0 0 10px 0px  !important;
     width: 250px;
   }
-    /* footer-sec */
-.footer {
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 12px;
-  letter-spacing: 1px;
+  
+  /* footer-sec */
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
 }
+
+
+@media screen and (max-width:425px){
+  .navbar{
+    width: 400px;
+  }
+  
 }
 
 @media screen and (max-width:375px){

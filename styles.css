@@ -504,6 +504,83 @@ body{
 
 }
 
+@media screen and (max-width:480px){
+  .navbar{
+    width: 430px;
+  }
+
+
+  /* home-sec  */
+  .img-sec{
+    padding-left: 40px !important;
+  }
+
+  .profile-photo img {
+    left: 190px;
+  }
+  
+  .img-text-firstname{
+    left: 70px;
+  }
+  .img-text-lastname{
+    left: 100px;
+  }
+  
+  .social-link{
+    left: 80px;
+  }
+
+  .main-text {
+    max-width: 800px;
+    margin: 20px 0px 100px 20px;
+    padding: 10px 20px;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  .main-text h3 {
+    font-size: 1.5rem;
+  }
+  
+  .main-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+  }
+  
+  .main-text .name{
+    width: 0px;
+  }
+  
+  .main-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    padding-right: 20px;
+  }
+  
+  .cta-home {
+    margin-top: 10px;
+  }
+  
+  .cta-home .btn {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+
+  /* footer-sec */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+}
+
+
 @media screen and (max-width:425px){
   /* navbar  */
 .navbar {
@@ -512,52 +589,12 @@ body{
 
 }  
 
-  /* home-sec  */
-.main-text {
-  max-width: 800px;
-  margin: 20px 0px 100px 20px;
-  padding: 10px 20px;
-  font-family: "Quicksand", sans-serif;
-}
+  
+  .img-sec{
+    padding-left: 20px !important;
+  }  
 
-.main-text h3 {
-  font-size: 1.5rem;
-}
 
-.main-text h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  margin: 10px 0;
-}
-
-.main-text .name{
-  width: 0px;
-}
-
-.main-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  text-align: justify;
-  padding-right: 20px;
-}
-
-.cta-home {
-  margin-top: 10px;
-}
-
-.cta-home .btn {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-/* footer-sec */
-.footer {
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 12px;
-  letter-spacing: 1px;
-}
 }
 @media screen and (max-width:375px){
   /* navbar  */
