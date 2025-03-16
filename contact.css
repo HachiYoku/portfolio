@@ -561,7 +561,7 @@ textarea{
     margin:0 0 10px 0px  !important;
     width: 250px;
   }
-  
+
   /* footer-sec */
   .footer {
     width: 100%;
@@ -574,7 +574,7 @@ textarea{
 }
 
 
-@media screen and (max-width:425px){
+@media screen and (max-width:430px){
   .navbar{
     width: 400px;
   }
