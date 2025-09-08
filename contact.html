@@ -43,28 +43,17 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="nav-bar mx-auto">
-              <a href="index.html" class="home-btn "
-                ><span >Home</span></a
-              >
-              <a href="about.html" class="about-btn"
-                ><span>About</span></a
-              >
-              <a href="project.html" class="skills-btn"
-                ><span>Projects</span></a
-              >
-              <a href="service.html" class="services-btn"
-                ><span>Services</span></a
-              >
-              <a href="contact.html" class="contact-btn active"
-                ><span>Contact</span></a
-              >
+              <a href="index.html" class="home-btn"><span>Home</span></a>
+              <a href="about.html" class="about-btn"><span>About</span></a>
+              <a href="project.html" class="skills-btn"><span>Projects</span></a>
+              <a href="service.html" class="services-btn"><span>Services</span></a>
+              <a href="contact.html" class="contact-btn active"><span>Contact</span></a>
             </div>
           </div>
         </div>
       </nav>
 
       <!-- page decoration -->
-      <!-- <div class="circle-lg"></div> -->
       <div class="circle-md d-none d-xl-block"></div>
       <div class="circle-sm1 d-none d-xl-block"></div>
       <div class="circle-sm2 d-none d-xl-block"></div>
@@ -83,54 +72,60 @@
           <h3 class="job-position role1">Designer</h3>
           <h3 class="job-position role2">Developer</h3>
         </div>
-        <div class="col-lg-7 content-sec ">
-          <h2 class="subhead">GET IN TOUCH  <span class="line "></span> </h2>
+
+        <div class="col-lg-7 content-sec">
+          <h2 class="subhead">GET IN TOUCH <span class="line"></span></h2>
+
           <!-- Social box    -->
           <div class="row social justify-content-center align-item-center my-2">
-            <div class="col-4  social-box">
-                <a href="#" class="mx-auto mt-2"><i class="fa-brands fa-facebook-f"></i></a>
-                <p class="mt-2">Hachi Yoku</p>
+            <div class="col-4 social-box">
+              <a href="#" class="mx-auto mt-2"><i class="fa-brands fa-facebook-f"></i></a>
+              <p class="mt-2">Hachi Yoku</p>
             </div>
             <div class="col-4 social-box">
-                <a href="#" class="mx-auto mt-2"><i class="fa-brands fa-github"></i></a>
-                <p class="mt-2">Hachi Yoku</p>
+              <a href="https://github.com/HachiYoku" class="mx-auto mt-2"><i class="fa-brands fa-github"></i></a>
+              <p class="mt-2">Hachi Yoku</p>
             </div>
             <div class="col-4 social-box mb-2">
-                <a href="#" class=" mx-auto mt-2"><i class="fa-brands fa-linkedin-in"></i></a>
-                <p class="mt-2">Hachi Yoku</p>
+              <a href="https://www.linkedin.com/in/hachi-yoku/" class=" mx-auto mt-2"><i class="fa-brands fa-linkedin-in"></i></a>
+              <p class="mt-2">Hachi Yoku</p>
             </div>
           </div> 
 
-          <!-- Email box -->
-          <div class="row email-box">
-            <h6 class="mt-2 mb-3 email-heading">Connet With Email :</h3>
-            <div class="col-sm-6 ">
+          <!-- Contact form -->
+          <form id="contact-form" action="https://formspree.io/f/xandaarr" method="POST">
+            <div class="row email-box">
+              <h6 class="mt-2 mb-3 email-heading">Connect With Email :</h6>
+              <div class="col-sm-6">
                 <div class="mb-3">
-                    <input type="text" class=" box form-control" id="exampleFormControlInput1" placeholder="Name">
-                  </div>
-            </div>
-            <div class="col-sm-6 ">
-                <div class="mb-3">
-                    <input type="email" class=" box form-control" id="exampleFormControlInput1" placeholder="Email" required>
-                  </div>
-            </div>
-          </div>
-          <div class="row text-area-box">
-            <div class="mb-2">
-                <textarea class="form-control mt-2" id="exampleFormControlTextarea1" rows="3" placeholder="Write Message"></textarea>
-              </div>
-              <div class="cta-home mt-2 ">
-                <div class="">
-                  <a href="#about" class="btn link-portfolio-one"
-                    ><span><i class="fa-solid fa-envelope me-2"></i>Send Message</span></a
-                  >
+                  <input type="text" class="box form-control" name="name" placeholder="Name" required>
                 </div>
-          </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="mb-3">
+                  <input type="email" class="box form-control" name="email" placeholder="Email" required>
+                </div>
+              </div>
+            </div>
+            <div class="row text-area-box">
+              <div class="mb-2">
+                <textarea class="form-control mt-2" name="message" rows="3" placeholder="Write Message" required></textarea>
+              </div>
+              <div class="cta-home mt-2 ">  <button type="submit" class="btn link-portfolio-one mt-2">
+                <i class="fa-solid fa-envelope me-2"></i> Send Message
+              </button> 
+            </div>
+            </div>
+          </form>
+
+          <!-- Status message -->
+          <div id="form-status" class="mt-3"></div>
+
         </div>
       </div>
-      </div>
+    </div>
 
-      <!-- footer -->
+    <!-- footer -->
     <footer class="footer">
       Stay Inspired. Stay Creative. @HachiYoku 2025
     </footer>
@@ -138,5 +133,32 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="transition.js"></script>
+
+    <!-- Formspree JS -->
+    <script>
+      const form = document.getElementById("contact-form");
+      const status = document.getElementById("form-status");
+
+      form.addEventListener("submit", async function(event) {
+        event.preventDefault();
+        const data = new FormData(form);
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (response.ok) {
+            status.innerHTML = `<div class="alert alert-success">✅ Message sent successfully!</div>`;
+            form.reset();
+            setTimeout(() => status.innerHTML = "", 5000); 
+          } else {
+            status.innerHTML = `<div class="alert alert-danger">❌ Oops! Something went wrong.</div>`;
+          }
+        } catch (error) {
+          status.innerHTML = `<div class="alert alert-danger">⚠️ Network error. Please try again later.</div>`;
+        }
+      });
+    </script>
   </body>
 </html>
